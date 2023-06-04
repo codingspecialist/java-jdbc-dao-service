@@ -9,16 +9,17 @@ import java.sql.Timestamp;
 @ToString
 @Getter
 public class Transaction {
-    private int transactionNumber; //PK
-    private int transactionAmount;
-    private int transactionWBalance;
-    private int transactionDBalance;
-    private int transactionWAccountNumber;
-    private int transactionDAccountNumber;
+    private Integer transactionNumber; //PK
+    private Integer transactionAmount;
+    private Integer transactionWBalance;
+    private Integer transactionDBalance;
+    private Integer transactionWAccountNumber;
+    private Integer transactionDAccountNumber;
     private Timestamp transactionCreatedAt;
 
     @Builder
-    public Transaction(int transactionNumber, int transactionAmount, int transactionWBalance, int transactionDBalance, int transactionWAccountNumber, int transactionDAccountNumber, Timestamp transactionCreatedAt) {
+
+    public Transaction(Integer transactionNumber, Integer transactionAmount, Integer transactionWBalance, Integer transactionDBalance, Integer transactionWAccountNumber, Integer transactionDAccountNumber, Timestamp transactionCreatedAt) {
         this.transactionNumber = transactionNumber;
         this.transactionAmount = transactionAmount;
         this.transactionWBalance = transactionWBalance;

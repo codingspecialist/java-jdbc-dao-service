@@ -9,9 +9,9 @@ import java.sql.Timestamp;
 @ToString
 @Getter
 public class Account {
-    private int accountNumber; // PK
+    private Integer accountNumber; // PK
     private String accountPassword;
-    private int accountBalance;
+    private Integer accountBalance;
     private Timestamp accountCreatedAt;
 
     @Builder
